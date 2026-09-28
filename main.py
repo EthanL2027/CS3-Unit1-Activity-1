@@ -50,7 +50,7 @@ list_all_ingredients(burger_ingredients)
 
 # PART C
 def make_dish(ingredient1, ingredient2):
-    return f"{ingredient1} and {ingredient2} !"
+    return f"{ingredient1} and {ingredient2}!"
 
 dish = make_dish("Beef Patty", "French Fries")
 print(dish)
@@ -71,7 +71,7 @@ print(loaded_fries)
 def add_spice(dish, spice="paprika"):
     print(f"Adding a dash of {spice} to the {dish}. Hits the spot!")
 
-add_spice("Loaded Fries Combined Dish!", "cayenne pepper")
+add_spice("Loaded Fries !", "cayenne pepper")
 add_spice("Loaded Fries")
 
 # PART E: 
