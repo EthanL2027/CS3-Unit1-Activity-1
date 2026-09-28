@@ -1,7 +1,10 @@
-#Part A
+# ACTIVITY #1: Cooking with Functions
+
+# PART A:
+
 def welcome_message():
     print("Welcome to Ethan's virtual kitchen, today we will learn how to make a delicious burger!")
-    
+
 def cook_burger():
     print("Shape ground beef into a patty and season with salt, pepper, garlic powder, and smoked paprika.")
     print("Heat a pan or grill over medium-high heat.")
@@ -12,7 +15,15 @@ def cook_burger():
 welcome_message()
 cook_burger()
 
-# Part B
+# PART B: 
+def list_ingredients(main_ingredient, side_dish):
+    print(f"Main Ingredient: {main_ingredient}")
+    print(f"Side Dish: {side_dish}")
+
+list_ingredients("Beef Patty", "French Fries")
+list_ingredients("Beef Patty", "Onion Rings")
+
+# Extra: prints every ingredient in a list
 def list_all_ingredients(ingredients):
     print("Ingredients:")
     for item in ingredients:
@@ -23,20 +34,27 @@ burger_ingredients = [
     "Salt",
     "Pepper",
     "Bun",
-    "Cheese",
+    "American Cheese",
     "Lettuce",
     "Tomato",
     "Onion",
     "Ketchup",
     "Mayonnaise",
     "Smoked Paprika",
-    "Garlic Powder"
-    "Frozen French Fries"
+    "Garlic Powder",
+    "Frozen French Fries",
+    "Frozen Onion Rings"
 ]
 
 list_all_ingredients(burger_ingredients)
 
-#Part C
+# PART C
+def make_dish(ingredient1, ingredient2):
+    return f"{ingredient1} and {ingredient2} !"
+
+dish = make_dish("Beef Patty", "French Fries")
+print(dish)
+
 def make_loaded_fries(meat, cheese, topping, sauce):
     return (
         "Loaded Fries!\n"
@@ -46,43 +64,26 @@ def make_loaded_fries(meat, cheese, topping, sauce):
         f"Layer 4: {topping} with {sauce}"
     )
 
-dish = make_loaded_fries("Seasoned Ground Beef", "Melted Cheddar Cheese", "Diced Tomato and Onions", "Special Sauce")
+loaded_fries = make_loaded_fries("Seasoned Ground Beef", "Melted American Cheese", "Diced Tomato and Onions", "Special Sauce")
+print(loaded_fries)
 
-print(dish)
-
-# Part D
+# PART D: 
 def add_spice(dish, spice="paprika"):
     print(f"Adding a dash of {spice} to the {dish}. Hits the spot!")
 
-
+add_spice("Loaded Fries Combined Dish!", "cayenne pepper")
 add_spice("Loaded Fries")
 
-#Part E
-def welcome_message():
-    print("Welcome to the kitchen! Today we're making burgers.")
-
-def heat_grill():
-    print("Heating the grill to medium-high... ready!")
-
-def list_ingredients(*items):
-    print("Ingredients:", ", ".join(items))
-
-def make_dish(patty, bun):
-    return f"{patty} on a {bun}"
-
-def add_toppings(dish, *toppings):
-    print(f"Adding {', '.join(toppings)} to your {dish}.")
-
-
-
+# PART E: 
 def cook_recipe():
     welcome_message()
-    heat_grill()
-    list_ingredients("Beef Patty", "Brioche Bun", "Lettuce", "Tomato", "Cheese")
-    dish = make_dish("Beef Patty with cheese", "Brioche Bun")
-    print("Dish created:", dish)
-    add_toppings(dish, "Lettuce", "Tomato", "Special Sauce")
+    list_all_ingredients(burger_ingredients)
+    cook_burger()
+    fries = make_loaded_fries("Seasoned Ground Beef", "Melted American Cheese", "Diced Tomato and Onions", "Special Sauce")
+    print(fries)
+    add_spice("Loaded Fries")
+    burger = make_dish("American Cheeseburger", "Loaded Fries")
+    print("Dish created:", burger)
     print("Burger is ready to eat!")
-
 
 cook_recipe()
