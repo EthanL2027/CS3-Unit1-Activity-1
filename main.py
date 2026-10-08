@@ -24,29 +24,23 @@ list_ingredients("Beef Patty", "French Fries")
 list_ingredients("Beef Patty", "Onion Rings")
 
 # Extra: prints every ingredient in a list
-def list_all_ingredients(ingredients):
+def list_all_ingredients():
     print("Ingredients:")
-    for item in ingredients:
-        print(f"- {item}")
+    print("Ground Beef")
+    print("Salt")
+    print("Pepper")
+    print("Bun")
+    print("American Cheese")
+    print("Lettuce")
+    print("Tomato")
+    print("Onion")
+    print("Ketchup")
+    print("Mayonnaise")
+    print("Smoked Paprika")
+    print("Garlic Powder")
 
-burger_ingredients = [
-    "Ground Beef",
-    "Salt",
-    "Pepper",
-    "Bun",
-    "American Cheese",
-    "Lettuce",
-    "Tomato",
-    "Onion",
-    "Ketchup",
-    "Mayonnaise",
-    "Smoked Paprika",
-    "Garlic Powder",
-    "Frozen French Fries",
-    "Frozen Onion Rings"
-]
 
-list_all_ingredients(burger_ingredients)
+list_all_ingredients()
 
 # PART C
 def make_dish(ingredient1, ingredient2):
@@ -77,7 +71,7 @@ add_spice("Loaded Fries")
 # PART E: 
 def cook_recipe():
     welcome_message()
-    list_all_ingredients(burger_ingredients)
+    list_all_ingredients()
     cook_burger()
     fries = make_loaded_fries("Seasoned Ground Beef", "Melted American Cheese", "Diced Tomato and Onions", "Special Sauce")
     print(fries)
