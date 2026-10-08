@@ -23,7 +23,7 @@ def list_ingredients(main_ingredient, side_dish):
 list_ingredients("Beef Patty", "French Fries")
 list_ingredients("Beef Patty", "Onion Rings")
 
-# Extra: prints every ingredient in a list
+
 def list_all_ingredients():
     print("Ingredients:")
     print("Ground Beef")
