@@ -46,9 +46,6 @@ list_all_ingredients()
 def make_dish(ingredient1, ingredient2):
     return f"{ingredient1} and {ingredient2}!"
 
-dish = make_dish("Beef Patty", "French Fries")
-print(dish)
-
 def make_loaded_fries(meat, cheese, topping, sauce):
     return (
         "Loaded Fries!\n"
@@ -57,9 +54,6 @@ def make_loaded_fries(meat, cheese, topping, sauce):
         f"Layer 3: {cheese}\n"
         f"Layer 4: {topping} with {sauce}"
     )
-
-loaded_fries = make_loaded_fries("Seasoned Ground Beef", "Melted American Cheese", "Diced Tomato and Onions", "Special Sauce")
-print(loaded_fries)
 
 # PART D: 
 def add_spice(dish, spice="paprika"):
