@@ -12,17 +12,12 @@ def cook_burger():
     print("Mix together ketchup and mayonnaise and the seasonings listed to make a special sauce.")
     print("Place the sauce on the bottom bun, and on top add lettuce, and tomato.")
 
-welcome_message()
-cook_burger()
+
 
 # PART B: 
 def list_ingredients(main_ingredient, side_dish):
     print(f"Main Ingredient: {main_ingredient}")
     print(f"Side Dish: {side_dish}")
-
-list_ingredients("Beef Patty", "French Fries")
-list_ingredients("Beef Patty", "Onion Rings")
-
 
 def list_all_ingredients():
     print("Ingredients:")
@@ -40,7 +35,7 @@ def list_all_ingredients():
     print("Garlic Powder")
 
 
-list_all_ingredients()
+
 
 # PART C
 def make_dish(ingredient1, ingredient2):
@@ -59,18 +54,20 @@ def make_loaded_fries(meat, cheese, topping, sauce):
 def add_spice(dish, spice="paprika"):
     print(f"Adding a dash of {spice} to the {dish}. Hits the spot!")
 
-add_spice("Loaded Fries !", "cayenne pepper")
-add_spice("Loaded Fries")
+
 
 # PART E: 
 def cook_recipe():
     welcome_message()
     list_all_ingredients()
     cook_burger()
+    list_ingredients("Beef Patty", "French Fries")
+    list_ingredients("Beef Patty", "Onion Rings")
     fries = make_loaded_fries("Seasoned Ground Beef", "Melted American Cheese", "Diced Tomato and Onions", "Special Sauce")
     print(fries)
     add_spice("Loaded Fries")
     burger = make_dish("American Cheeseburger", "Loaded Fries")
+    add_spice("Loaded Fries !", spice="cayenne pepper")
     print("Dish created:", burger)
     print("Burger is ready to eat!")
 
